@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css',
   ],
+  
   modules: [
  
     '@pinia/nuxt',
@@ -15,6 +16,12 @@ export default defineNuxtConfig({
 
   
   ],
+  app: {
+    head: {
+      htmlAttrs: { lang: 'pt-br' },
+           link: [{ rel: 'icon', type: 'image/jpeg', href: "@/logo.jpeg" }]
+        }
+   },
   runtimeConfig:{
     appwriteApiKey:'',
     databaseKey: '',
